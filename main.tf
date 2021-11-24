@@ -24,7 +24,7 @@ resource "rancher2_node_pool" "node_pool" {
   hostname_prefix = var.hostname_prefix
   node_template_id = data.rancher2_node_template.node_template.id
 
-  quantity = var.workers_node_count
+  quantity = var.quantity
   control_plane = var.is_control_plane
   etcd = var.is_etcd
   worker = is_worker
