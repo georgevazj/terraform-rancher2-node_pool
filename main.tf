@@ -27,5 +27,5 @@ resource "rancher2_node_pool" "node_pool" {
   quantity = var.quantity
   control_plane = var.is_control_plane
   etcd = var.is_etcd
-  worker = is_worker
+  worker = var.is_worker
 }
